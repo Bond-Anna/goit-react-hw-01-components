@@ -1,0 +1,48 @@
+.statistics {
+  width: 300px;
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 30px auto;
+}
+.title {
+  text-align: center;
+  padding: 10px 0;
+  color: rgb(105, 105, 105);
+}
+.statList {
+  display: flex;
+  border-top: 1px solid gray;
+}
+.statList li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0;
+  background-color: #(Math.random() .toString(16) + '000000') .substring(2, 8)
+    .toUpperCase();
+}
+.statList li:first-child {
+  background-color: lightgreen;
+}
+.statList li:nth-child(2) {
+  background-color: lightsalmon;
+}
+.statList li:nth-child(3) {
+  background-color: rgb(76, 199, 248);
+}
+.statList li:nth-child(4) {
+  background-color: yellow;
+}
+.statList li:nth-child(5) {
+  background-color: rgb(197, 143, 255);
+}
+.statList li:not(:last-child) {
+  border-right: 1px solid gray;
+}
+.label {
+  padding-bottom: 5px;
+  font-size: small;
+  color: rgb(68, 68, 68);
+}
