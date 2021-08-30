@@ -6,10 +6,12 @@ import {
   stats,
 } from '../src/components/userProfile/user.json';
 import statData from '../src/components/statisticsSection/statistical-data.json';
+import transactions from 'components/transactions/transactions.json';
 import friends from '../src/components/friends/friends.json';
 import { UserProfile } from 'components/userProfile/userProfile';
 import { Statistics } from 'components/statisticsSection/statisticsSection';
-import { FriendList } from 'components/friends/friends';
+import { FriendList } from 'components/friends/friendsList';
+import { TransactionHistory } from 'components/transactions/trans';
 
 export function App() {
   return (
@@ -24,7 +26,8 @@ export function App() {
         likes={stats.likes}
       />
       <Statistics stats={statData} />
-      <FriendList friends={friends} />
+      <FriendList friendList={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
