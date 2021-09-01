@@ -25,7 +25,7 @@ export function App() {
         views={stats.views}
         likes={stats.likes}
       />
-      <Statistics stats={statData} />
+      <Statistics stats={statData} title="Upload stats" />
       <FriendList friendList={friends} />
       <TransactionHistory items={transactions} />
     </div>
